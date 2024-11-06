@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Producto</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Los Simpson">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#teorias"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#teorias">teorias <span class="sr-only"> </span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#destacados">destacados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galeria">galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#contacto">footer</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+    <div class="card card--product">
+        <img src="img/taza.jpg" alt="Taza Los Simpson" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Taza Los Simpson</h5>
+            <p class="card-text">Una taza temática de Los Simpson.</p>
+            <button class="btn btn-primary" onclick="showProductDetails('Taza Los Simpson', 'Una taza temática de Los Simpson con un diseño único.')" data-toggle="modal" data-target="#taza">Detalles</button>
+        </div>
+    </div>
+    <div class="card card--product">
+        <img src="img/figura- mr duff.webp" alt="Figura Mr. Duff" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Figura Mr. Duff</h5>
+            <p class="card-text">Figura coleccionable del Sr. Duff.</p>
+            <button class="btn btn-primary" onclick="showProductDetails('Figura Mr. Duff', 'Una figura de colección del famoso Sr. Duff de Los Simpson.')" data-toggle="modal" data-target="#figura-mrduff">Detalles</button>
+        </div>
+    </div>
+    <div class="card card--product">
+        <img src="img/adivina quien.jpeg" alt="Juego Adivina Quién" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Juego Adivina Quién</h5>
+            <p class="card-text">Un divertido juego de mesa para toda la familia.</p>
+            <button class="btn btn-primary" onclick="showProductDetails('Juego Adivina Quién', 'El clásico juego de mesa de adivinanza, ahora en versión Los Simpson.')" data-toggle="modal" data-target="#adivinaQuien">Detalles</button>
+        </div>
+    </div>
+    <div class="card card--product">
+        <img src="img/pantunflas.jpg" alt="Pantunflas de Los Simpson" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Pantunflas de Los Simpson</h5>
+            <p class="card-text">Confortables pantunflas inspiradas en los personajes de Los Simpson.</p>
+            <button class="btn btn-primary" onclick="showProductDetails('Pantunflas de Los Simpson', 'Disfruta de la comodidad con estas pantunflas inspiradas en Los Simpson.')" data-toggle="modal" data-target="#pantunflas">Detalles</button>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="taza" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalLabel">taza de los simpson</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>taza conmemorativa de los simpson 25 aniversario</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- figura de accion-->
+    <div class="modal fade" id="figura-mrduff" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalLabel">Super7 Ultimates: Los Simpson - Duffman              </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>La fiebre amarilla regresa una vez más a la línea de figuras coleccionables Ultimates de Super7, traídas desde Springfield para ti, llegan estos imprescindibles personajes de Los Simpson. Haz crecer tu colección con Bartman, Duffman, Hank Scorpio y El Payaso Krusty que están listos para involucrarse en nuevas historias y provocar alguna que otra risa con recuerdos de tu serie favorita. Estas figuras de 7 pulgadas están hechas a la medida y altamente articuladas. También cuentan con una gran variedad de piezas intercambiables y accesorios icónicos inspirados en los mejores episodios de Los Simpsons.
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- adivina quien-->
+    <div class="modal fade" id="adivinaQuien" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalLabel">adivina quien</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>JUEGO DE MESA. El juego de mesa ¿Sabes Quién Es? de Los Simpsons te da tardes de diversión garantizada para compartir con amigos. El juego tiene 24 personajes, por lo que es imposible aburrirse.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pantunflas-->
+    <div class="modal fade" id="pantunflas" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalLabel">pantunflas de los simpson</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Pantufla Los Simpson para caballero, elaborada con materiales textiles y sintéticos de la más alta calidad.
+
+                        Suela Antiderrapante, plantilla acolchada.
+                        
+                        100% Original.
+                        
+                        Comodidad Inigualable.
+                        
+                        Regalo perfecto.
+                        
+                        Atrévete a estar cómodo todo el tiempo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="productoModal2" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalLabel">modal 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>modal 2</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<footer id="contacto">
+    <p>© 2024 Teorías de Los Simpson. Todos los derechos reservados.</p>
+    <p><a>ulises cano</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+// components.scss
+
+// Enlaces
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+a:hover {
+    color: $link-color;
+}
+
+// Nav (navegación)
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+    li {
+        display: inline;
+
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+// _components.scss
+
+.card {
+  &--product {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__content {
+      padding: 1em;
+
+      h3 {
+        margin: 0;
+        font-size: 1.2em;
+      }
+
+      p {
+        color: $text-color;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: #fff;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+footer {
+    text-align: center;
+    background-color: $footer-background;
+    color: $footer-text-color;
+    padding: 20px;
+    margin-top: 40px;
+
+    a {
+        color: $link-hover-color;
+        text-decoration: none;
+    }
+}
